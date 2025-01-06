@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de notas</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1 class="titulo">Aplicacion de Notas</h1>
+
+        <div class="agregar-nota">
+            <div class="agregar-nota__cirulo">
+                <div class="circulo__cruz"></div>
+            </div>
+            <h3 class="agregar-nota__titulo">Agregar Nota</h3>
+        </div>
+        <button class="boton__eliminar-todo">Eliminar Todo</button>
+        <div class="modal">
+            <label class="modal__input" for="titulo-nota">Titulo de la nota</label>
+            <input class="modal__titulo" type="text" id="titulo-nota">
+            <label class="modal__input"  for="nota-descripcion">Descripción</label>
+            <textarea class="modal__descripcion" id="nota-descripcion"></textarea>
+            <button class="modal__boton" id="modal__boton--agregar">Agregar Nota</button>
+            <button class="modal__boton " id="modal__boton--editar">Editar Nota</button>
+        </div>
+
+        <div class="cerrar"></div>
+
+        <div class="notas-contenedor">
+        </div>
+
+    </main>
+</body>
+    <script src="js/index.js"></script>
+</html>
